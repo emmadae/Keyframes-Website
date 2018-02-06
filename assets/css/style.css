@@ -1,0 +1,819 @@
+/* index.html background settings */
+#index-body{
+	background: #eee;
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+    min-height: 100%;
+    overflow:hidden;
+}
+
+/* about.html background settings */
+#about-body, #explore-body, #contact-body{
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100%;
+    min-height: 100%;
+}
+
+/* -------------------- INDEX.HTML NAV BAR -------------------- */
+/* nav bar (index.html) */
+.index-nav{
+	height:.1px;
+}
+
+.index-nav ul{
+	display:inline-block;
+	width:80%;
+	transform: rotate(90deg);
+	margin-top:6.5%;
+
+}
+
+.index-nav li{
+	display: inline-block;
+	padding: 1.5% 4%;
+	margin:92% 0% 0% 1%;
+	background:#f0e600;
+}
+
+.index-nav li a {
+	list-style-type: none;
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing:1.5px;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+}
+
+.index-nav li a:hover, .index-nav li a.active {
+	transition: ease-in-out .2s;
+	color:#333;
+    cursor: pointer;
+}
+
+/* -------------------- ABOUT.HTML NAV BAR -------------------- */
+/* nav bar (about.html) */
+.about-nav, .explore-nav{
+	height:.1px;
+}
+
+.about-nav ul, .explore-nav ul{
+	display:inline-block;
+	text-align:center;
+	width:80%;
+	margin:2% 10% 2% 10%;
+}
+
+.about-nav li, .explore-nav li{
+	display: inline-block;
+	padding: 2% 2%;
+}
+
+.about-nav li a, .explore-nav li a {
+	list-style-type: none;
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing:1.5px;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+}
+
+.about-nav li a:hover, .about-nav li a.active {
+	transition: ease-in-out .2s;
+	color:#f0e600;
+    cursor: pointer;
+}
+
+.explore-nav li a:hover, .explore-nav li a.active {
+	transition: ease-in-out .2s;
+	color:#f0e600;
+    cursor: pointer;
+}
+
+/* -------------------- CONTACT.HTML NAV BAR -------------------- */
+/* nav bar (contact.html) */
+.contact-nav {
+	height:.1px;
+}
+
+.contact-nav ul{
+	display:inline-block;
+	width:55%;
+	transform: rotate(0deg);
+	margin-left:2%;
+	
+
+}
+
+.contact-nav li{
+	display: inline-block;
+	padding: 1.5% 4%;
+	margin:4% 0% 0% 1%;
+	background:#f0e600;
+}
+
+.contact-nav li a {
+	list-style-type: none;
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing:1.5px;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+}
+
+.contact-nav li a:hover, .contact-nav li a.active {
+	transition: ease-in-out .2s;
+	color:#333;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ================================================================================== */
+/* ----------------------------- INDEX.HTML ------------------------ */
+
+/* ----------------------------------------------------- */
+/* static flat overlay (index.html) */
+.static-layer{
+	background:#fff;
+	height:650px;
+	width:45%;
+	position:fixed;
+	z-index:-20;
+	top:0;
+}
+
+/* ----------------------------------------------------- */
+/* INDEX drawing 1 - line 1 - dot 1 */
+.drawing-1{
+	margin-top:5%;
+	width:65%;
+}
+
+#line-1{
+	height:3px;
+	background:#f0e600;
+	animation: drawLineOne 2.5s linear; 
+}
+
+#dot-1{
+	height:13px;
+	background:#f0e600;
+	width:13px;
+	border-radius:50%;
+	margin:-1.2% 0 0 99%;
+}
+
+/* keyframe animation - draw line 1 index */
+@keyframes drawLineOne {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+/* INDEX drawing 2 - line 2 - dot 2 */
+.drawing-2{
+	margin-top:1.5%;
+	width:37%;
+}
+
+#line-2{
+	height:3.5px;
+	background:#f0e600;
+	animation: drawLineTwo 2.5s linear; 
+}
+
+#dot-2{
+	height:13px;
+	background:#f0e600;
+	width:13px;
+	border-radius:50%;
+	margin:-2% 0 0 99%;
+}
+
+/* keyframe animation - draw line 2 index */
+@keyframes drawLineTwo {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* ----------------------------------------------------- */
+/* main title (index.html) */
+.main-title h1, .main-title h2 {
+	position:relative;
+	background:#f0e600;
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding:2%;
+	line-height:27px;
+}
+
+.main-title h1{
+	margin:10% 25% 2% 15%;
+}
+
+.main-title h2{
+	margin:0% 45% 2% 15%;
+}
+
+
+/* ------------------------------------------------------ */
+/* INDEX drawing 3 - line 3 - dot 3 */
+.drawing-3{
+	margin: 5% 0 5% 58.5%;
+	width:55%;
+	position:relative;
+	transform: rotate(270deg);
+	z-index:-1;
+}
+
+#line-3{
+	height:2.5px;
+	background:#f0e600;
+	animation: drawLineThree 2.5s linear; 
+}
+
+#dot-3{
+	height:13px;
+	background:#f0e600;
+	width:13px;
+	border-radius:50%;
+	margin:-1.3% 0 0 99%;
+}
+
+/* keyframe animation - draw line 3 index */
+@keyframes drawLineThree {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------ */
+/* INDEX drawing 4 - line 4 - dot 4 */
+.drawing-4{
+	margin: 10% 0% 5% 70%;
+	width:37%;
+	transform: rotate(270deg);
+	position:relative;
+	z-index:-1;
+}
+
+#line-4{
+	height:2.5px;
+	background:#f0e600;
+	animation: drawLineFour 2.5s linear; 
+}
+
+#dot-4{
+	height:13px;
+	background:#f0e600;
+	width:13px;
+	border-radius:50%;
+	margin:-2% 0 0 99%; 
+} 
+
+/* keyframe animation - draw line 4 index */
+@keyframes drawLineFour {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* ----------------------------------------------------- */
+/* "explpore" aside bar */
+.explore-aside a button{
+	font-family:"Raleway", sans-serif;
+	letter-spacing:2px;
+	font-weight:bold;
+	color:#333;
+	background:white;
+	padding:2%;
+	text-transform:uppercase;
+	text-align:center;
+	float:right;
+	border:none;
+	font-size:15px;
+	margin:-6% 8% 8% 0;
+	transition:.2s ease-in-out;
+	position:relative;
+}
+
+.explore-aside a button:hover{
+	color:#f0e600;
+	transition:.2s ease-in-out;
+	cursor:pointer;
+}
+
+
+
+
+
+/* ================================================================================== */
+/* ----------------------------- ABOUT.HTML ------------------------ */
+
+/* ------------------------------------------------------ */
+/* settings for about main title - section 00 */
+.about-main-00 {
+	margin-top:18%;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 1.5px;
+	line-height: 22px;
+	color:white;
+	text-transform: uppercase;
+	font-size:23px;
+	text-align:center;
+}
+
+.about-main-00 p{
+	background-color:#f0e600;
+	margin-bottom:1.5%;
+	padding:2%;
+}
+
+/* ------------------------------------------------------ */
+/* settings for individual lines in main about section 00 */
+#line-00-1{ 
+	width:70%; 
+	margin-left:13%;
+}
+
+#line-00-2{ 
+	width:60%; 
+	margin-left:18%;
+}
+
+#line-00-3{ 
+	width:50%; 
+	margin-left:23%;
+}
+
+/* ------------------------------------------------------ */
+/* about section 01 - info section settings */
+.about-section-01{
+	background:white;
+	height:1000px;
+	width:100%;
+	margin-top:10%;
+	-webkit-clip-path: polygon(50% 12%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+	clip-path: polygon(50% 12%, 100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+}
+
+.about-section-01 h2{
+	font-family:"Open Sans", sans-serif;
+	text-transform:uppercase;
+	padding-top:20%;
+	width:80%;
+	margin:0 10% 2% 10%;;
+	letter-spacing:1px;
+	line-height:30px;
+	text-align:center;
+	color:#f0e600;
+	font-size:24px;
+}
+
+.about-section-01 h3 {
+	color:white;
+	font-family:"Open Sans", sans-serif;
+	text-transform:uppercase;
+	padding:2.5%;
+	background:#f0e600;
+	width:70%;
+	font-size:19px;
+	text-align:center;
+	margin: 0% 13%;
+	letter-spacing:1px;
+}
+
+.about-section-01 p{
+	color:#333;
+	font-family:"Lato", sans-serif;
+	width:66%;
+	line-height:24px;
+	font-size:17px;
+	text-align:center;
+	margin: 0% 13%;
+	letter-spacing:1px;
+	padding: 4%;
+}
+
+/* ------------------------------------------------------ */
+/* about section 02 - link to explore page settings */
+.link-to-explore{
+	height:500px;
+	width:100%;
+}
+
+.link-to-explore h2{
+	color:#333;
+	font-family:"Open Sans", sans-serif;
+	text-transform:uppercase;
+	padding:2%;
+	background:white;
+	width:60%;
+	font-size:19px;
+	text-align:center;
+	margin: 25% 18% 0% 18%;
+	letter-spacing:1px;
+}
+
+.link-to-explore h2 span{
+	color:#f0e600;
+}
+
+
+/* ------------------------------------------------------ */
+/* specific line settings for section 02 on about */
+.link-to-explore .about-offset-00{
+	width:40%;
+	margin-left:15%;
+}
+
+.link-to-explore .about-offset-01{
+	width:50%;
+	margin-left:35%;
+	margin-top:1%;
+}
+
+.link-to-explore .about-offset-02{
+	width:58%;
+	margin-left:20%;
+	margin-top:1%;
+}
+
+/* explore button link */
+.link-to-explore a button{
+	width:26%;
+	padding:1.5% 0%;
+	background-color:#f0e600;
+	font-family:"Open Sans", sans-serif;
+	color:white;
+	border:none;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size:18px;
+	margin:1% 60%;
+	transition: .3s ease-in-out;
+}
+
+.link-to-explore a button:hover{
+	background: white;
+	color:#333;
+	transition: .3s ease-in-out;
+	cursor: pointer;
+}
+
+
+
+
+
+/* ================================================================================== */
+/* ----------------------------- CONTACT.HTML ------------------------ */
+
+/* ------------------------------------------------------ */
+#contact-body{
+	overflow:hidden;
+}
+
+/* ------------------------------------------------------ */
+/* CONTACT drawing 1 - line 1 - dot 1 */
+#drawing-1-contact{
+	margin: 12% 0 5% -6%;
+	width:32%;
+	position:relative;
+	transform: rotate(360deg);
+	z-index:-1;
+}
+
+#drawing-1-contact .line-1{
+	height:2.5px;
+	background:#f0e600;
+	animation: lineOneContact 2.5s linear; 
+}
+
+#drawing-1-contact .dot-1{
+	height:13px;
+	background:#f0e600;
+	width:13px;
+	border-radius:50%;
+	margin:-2% 0 0 99%;
+}
+
+/* keyframe animation - draw line 1 */
+@keyframes lineOneContact {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+/* CONTACT drawing 2 - line 2 - dot 2 */
+#drawing-2-contact{
+	margin: -8% 0 0 0;
+	width:40%;
+	position:relative;
+	transform: rotate(360deg);
+	z-index:-1;
+}
+
+#drawing-2-contact .line-2{
+	height:2.5px;
+	background:#f0e600;
+	animation: lineTwoContact 2.5s linear; 
+}
+
+#drawing-2-contact .dot-2{
+	height:13px;
+	background:#f0e600;
+	width:13px;
+	border-radius:50%;
+	margin:-1.6% 0 0 99%;
+}
+
+/* keyframe animation - draw line 2 */
+@keyframes lineTwoContact {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------ */
+/* CONTACT drawing 3 - line 3 - dot 3 */
+#drawing-3-contact{
+	margin: 41% 0 5% 40.5%;
+	width:65%;
+	position:relative;
+	transform: rotate(180deg);
+	z-index:-1;
+}
+
+#drawing-3-contact .line-3{
+	height:2.5px;
+	background:#f0e600;
+	animation: lineThreeContact 2.5s linear; 
+}
+
+#drawing-3-contact .dot-3{
+	height:13px;
+	background:#f0e600;
+	width:13px;
+	border-radius:50%;
+	margin:-1.3% 0 0 99%;
+}
+
+/* keyframe animation - draw line 3 contact */
+@keyframes lineThreeContact {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------ */
+/* CONTACT drawing 4 - line 4 - dot 4 */
+#drawing-4-contact{
+	margin: -8% 0% 5% 65%;
+	width:37%;
+	transform: rotate(180deg);
+	position:relative;
+	z-index:-1;
+}
+
+#drawing-4-contact .line-4{
+	height:2.5px;
+	background:#f0e600;
+	animation: lineFourContact 2.5s linear; 
+}
+
+#drawing-4-contact .dot-4{
+	height:13px;
+	background:#f0e600;
+	width:13px;
+	border-radius:50%;
+	margin:-2% 0 0 99%; 
+} 
+
+/* keyframe animation - draw line 4 contact */
+@keyframes lineFourContact {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------ */
+.contact-us-main-header h1{
+	padding:2% 5%;
+	background-color:#f0e600;
+	font-family:"Open Sans", sans-serif;
+	color:white;
+	width:30%;
+	border:none;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size:18px;
+	margin: -17% 0 0 28%;
+}
+
+.contact-body {
+	width:40%;
+	position:relative;
+	float:right;
+	height:650px;
+	background:white;
+	padding: 8% 4%;
+	margin-top:-15%;
+	z-index:-5;
+}
+
+/* ------------------------------------------------------ */
+/* contact form (contact.html) */
+.contact-body p, .contact-body form label{
+	font-family:"Lato", sans-serif;
+	color:#333;
+	border:none;
+	font-size:15px;
+	margin:4% 0;
+	line-height:20px;
+}
+
+.contact-body form label{
+	text-align:left;
+}
+
+.contact-body form input, .contact-body form textarea{
+	border-radius:3px;
+	border:1px solid #ddd;
+	padding:6px 5px;
+	width:100%;
+	margin:1% 0 3% 0;
+	
+}
+
+.contact-body form textarea{
+	height:160px;
+	margin: 1% 0 3% 0;
+}
+
+.contact-body form button{
+	background:none;
+	border:1px solid #333;
+	padding:10px 15px;
+	font-family: "Lato", sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	margin-left:85%;
+	transition:.2s ease-in-out;
+}
+
+.contact-body form button:hover{
+	transition:.2s ease-in-out;
+	background:#f0e600;
+	border: 1px solid #f0e600;
+	color:white;
+}
+
+
+
+
+
+/* ================================================================================== */
+/* ----------------------------- EXPLORE.HTML ------------------------ */
+
+
+#explore-section-00 h1, #explore-section-00 h2 {
+	padding:3%; 
+	background-color:#f0e600;
+	font-family:"Open Sans", sans-serif;
+	color:white;
+	width:40%;
+	border:none;
+	text-transform:uppercase;
+	letter-spacing:7px;
+	font-size:34px;
+	margin:18% 27% 2% 16%;
+	text-align:center;
+}
+
+ #explore-section-00 h2{
+ 	margin:0% 27% 3% 35%;
+ }
+
+#explore-section-00 i{
+	color:#f0e600;
+	font-size: 40px;
+	text-align:center;
+	margin:12% 50%;
+	animation: arrowBounce 1.5s infinite; 
+}
+
+
+@keyframes arrowBounce{
+	0%{
+		margin-top:12%;
+	}
+	50%{
+		margin-top: 10%
+	}
+	100%{
+		margin-top:12%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ================================================================================== */
+/* --------------------- RETURN TO TOP ----------------------- */
+/* Return To The Top Button */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(140, 140, 140, 0.55);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(69, 69, 69, 0.7);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 10px;
+}
+
